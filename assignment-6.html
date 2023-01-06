@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <title>
+    Registration form
+  </title>
+<head>
+<style>
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: yellowgreen;
+}
+h1{
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+.container {
+  padding: 16px;
+  background-color: blueviolet;
+}
+input[type=text], input[type=password], input[type=date]:focus {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #ffffff;
+}
+
+input[type=text]:focus, input[type=password]:focus{
+  background-color: red;
+  outline: none;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.registerbtn {
+  background-color: black;
+  color: red;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+a {
+  color: dodgerblue;
+}
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1>CRICKET REGISTRATION FORM</h1>
+    <label for="Name"><b>Student name:</b></label>
+    <input type="text" placeholder="Enter name" name="Name" id="Name" required>
+
+    <label for="Age"><b>Age:</b></label>
+    <input type="text" placeholder="Enter age" name="Age" id="Age" required>
+
+    <label for="Gender"><b>Gender:</b></label><br><br>
+    <input type=radio name=initial checked>Male
+    <input type=radio name=initial>Female<br><br><br>
+
+    <label for="Date"><b>Enter Date of Birth:</b></label><br><br>
+    <input type="date" id="Date" 
+           style="width: 200px; height: 40px ;">
+           <br><br><br>
+
+    <label for="email"><b>Email:</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    
+    <label for="phone number"><b>Mobile number:</b></label>
+    <input type="text" placeholder="Enter mobile number" name="phone number" id="phone number" required>
+
+    <label for="Address"><b>Current address:</b></label>
+    <input type="text" placeholder="Enter current address " name="Address" id="Address" required>
+
+    <label for="Date of registeration"><b>Date of registration:</b></label>
+    <input type="text" placeholder="mm/dd/yyyy" name="date" id="Date" required>
+
+    <label for="psw"><b>Create password:</b>(to login to registration form)</label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password:</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+</form>
+
+</body>
+</html>
